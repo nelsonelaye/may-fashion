@@ -23,7 +23,7 @@ const Footer = () => {
                 <span>FaTwitter</span>
             </IconDiv>
         </Wrapper>
-        <p>Copyright 2020 Griflan Design Inc. All Rights Reserved</p>
+        <p>Copyright 2022 CodeLab-set05. All Rights Reserved</p>
     </Container>
     </div>
   )
