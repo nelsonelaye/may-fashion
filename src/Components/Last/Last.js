@@ -25,17 +25,22 @@ export default Last;
 
 const Container = styled.div`
   width: 100%;
-  height: 95vh;
-  display: flex;
+  min-height: 95vh;
+  height: 100%;
+  // display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   margin: 50px 0px;
+  padding: 0 30px;
 `;
+
 const Hold = styled.div`
   position: relative;
   border-radius: 10px;
+  padding: 0 30px;
 
-  width: 90%;
+  width: 100%;
   height: 100%;
   background-image: url("/images/shop.jpg");
   background-size: cover;
@@ -44,6 +49,10 @@ const Hold = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 425px) {
+    padding: 50px 30px;
+  }
 `;
 
 const Dark = styled.div`
@@ -59,14 +68,14 @@ const Dark = styled.div`
 `;
 
 const Text = styled.div`
-  width: 600px;
+  // width: 600px;
   text-align: center;
   color: #fff;
   z-index: 4;
 
   h2 {
     font-size: 40px;
-    font-family: "Rufina", serif;
+    // font-family: "Poppins", san-serif;
     font-weight: 700;
   }
 

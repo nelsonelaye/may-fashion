@@ -14,7 +14,9 @@ function Men() {
           <Detail pic="/images/men4.jpg" />
           <Detail pic="/images/men8.jpg" />
         </CardHold>
-        <button>Browse Collections</button>
+        <a href="/" style={{ color: "inherit", textDecoration: "none" }}>
+          <button>Browse Collections</button>
+        </a>
       </Hold>
     </Container>
   );
@@ -31,11 +33,11 @@ const Container = styled.div`
   margin: 50px 0px;
 `;
 const Hold = styled.div`
-  width: 90%;
+  width: 95%;
 
   h1 {
-    font-family: "Rufina", serif;
-    margin-left: 18px;
+    // font-family: "Rufina", serif;
+    margin-left: 5px;
   }
 
   button {
@@ -43,7 +45,7 @@ const Hold = styled.div`
     padding: 15px 30px;
     font-size: 20px;
     font-weight: 400px;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: #fff;
     outline: none;
     border: 1px solid black;
@@ -58,18 +60,18 @@ const Hold = styled.div`
 
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 23px;
+      font-size: 20px;
     }
 
     button {
-      padding: 10px 30px;
+      padding: 10px 20px;
       font-size: 13px;
     }
   }
 
   @media screen and (max-width: 425px) {
     button {
-      margin-top: 0px;
+      margin-top: 10px;
     }
   }
 `;
@@ -81,7 +83,7 @@ const CardHold = styled.div`
   align-items: center;
 
   @media screen and (max-width: 425px) {
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
   }
 `;

@@ -22,7 +22,7 @@ const Shoe = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          // dots: true,
         },
       },
       {
@@ -36,8 +36,8 @@ const Shoe = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 1.5,
+          slidesToScroll: 1.5,
         },
       },
     ],
@@ -221,6 +221,15 @@ const Carousel = styled(Slider)`
     padding: 15px;
     background-color: black;
     border-radius: 5px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .slick-prev:before {
+      display: none;
+    }
+    .slick-next:before {
+      display: none;
+    }
   }
 `;
 

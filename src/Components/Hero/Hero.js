@@ -64,6 +64,10 @@ export default Slide;
 const Container = styled.div`
   width: 100%;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 425) {
+    margin-bottom: 30px;
+  }
 `;
 const Carosel = styled(Slider)`
   overflow: hidden;

@@ -21,7 +21,13 @@ const Footer = () => {
             <span>FaTwitter</span>
           </IconDiv>
         </Wrapper>
-        <p>Copyright 2022 CodeLab Set05. All Rights Reserved</p>
+        <p>
+          &copy; Built by{" "}
+          <a href="https://github.com/nelsonelaye" style={{ color: "inherit" }}>
+            Nelson Elaye
+          </a>
+          . All Rights Reserved. 2022
+        </p>
       </Container>
     </div>
   );
@@ -31,7 +37,7 @@ export default Footer;
 
 const Container = styled.div`
   width: 100%;
-  height: 120px;
+  height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +46,7 @@ const Container = styled.div`
 
   p {
     color: #697c81;
+    font-size: 13px;
   }
 
   @media screen and (max-width: 768px) {
@@ -51,7 +58,8 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   width: 90%;
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
 `;

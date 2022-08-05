@@ -14,7 +14,9 @@ function Women() {
           <Detail pic="/images/w2.jpg" />
           <Detail pic="/images/w7.jpg" />
         </CardHold>
-        <button>Browse Collections</button>
+        <a href="/" style={{ color: "inherit", textDecoration: "none" }}>
+          <button>Browse Collections</button>
+        </a>
       </Hold>
     </Container>
   );
@@ -30,11 +32,11 @@ const Container = styled.div`
   margin: 50px 0px;
 `;
 const Hold = styled.div`
-  width: 90%;
+  width: 95%;
 
   h1 {
-    font-family: "Rufina", serif;
-    margin-left: 18px;
+    // font-family: Poppins;
+    margin-left: 5px;
   }
 
   button {
@@ -57,22 +59,18 @@ const Hold = styled.div`
   }
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 23px;
+      font-size: 20px;
     }
 
     button {
-      padding: 10px 30px;
+      padding: 10px 20px;
       font-size: 13px;
     }
   }
 
   @media screen and (max-width: 425px) {
-    h1 {
-      margin-left: 0;
-    }
-
     button {
-      margin-top: 0px;
+      margin-top: 10px;
     }
   }
 `;

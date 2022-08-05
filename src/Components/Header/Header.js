@@ -47,6 +47,9 @@ const Container = styled.div`
   position: absolute;
   z-index: 1;
   font-family: "Metrophobic", sans-serif;
+  @media screen and (max-width: 425px) {
+    height: 70px;
+  }
 `;
 
 const Dark = styled.div`
@@ -65,6 +68,10 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 425px) {
+    justify-content: center;
+  }
 `;
 const Navigator = styled.div`
   width: 300px;
@@ -103,6 +110,9 @@ const LogoDiv = styled.div`
 
   @media screen and (max-width: 1024px) {
     font-size: 40px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 25px;
   }
 `;
 const IconDiv = styled.div`
